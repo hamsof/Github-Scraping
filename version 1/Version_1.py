@@ -1,11 +1,11 @@
 ########################## Hafiz Abdulmanan ############################
 
-########################## Github Api Scraping Task (Programming langueges version)####################
+########################## Github Api Scraping Task ####################
 
 from github import Github
 import json
 
-g = Github("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")
+g = Github("Acess_Token") # I am hiding my access token will present if you want demo
 
 
 data = {
@@ -27,8 +27,8 @@ for users in g.search_users(query="repos:>=50 location:pakistan"):
     count+=1
 
 json_string = json.dumps(all_data,indent = 4)
-with open('json_fist_github_data.json', 'w') as out:
+with open('json_1_github_data.json', 'w') as out:
     out.write(json_string)
 
 
-print("Total result :", count)
+print("Total users :", count)

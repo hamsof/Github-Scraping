@@ -5,7 +5,7 @@
 from github import Github
 import json
 
-g = Github("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")
+g = Github("access token")
 
 
 data = {
@@ -16,7 +16,7 @@ data = {
 }
 all_data = list()
 
-for users in g.search_users(query="repos:>=1000 location:pakistan"):
+for users in g.search_users(query="repos:>=600 location:pakistan"):
     #print(users.name , " " , users.email, " ")
     data['user name'] = users.login
     data['full name'] = users.name
@@ -36,5 +36,5 @@ for users in g.search_users(query="repos:>=1000 location:pakistan"):
     all_data.append(data.copy())
 
 json_string = json.dumps(all_data,indent = 4)
-with open('json_github_data.json', 'w') as out:
+with open('./json_github_data.json', 'w') as out:
     out.write(json_string)
