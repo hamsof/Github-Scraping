@@ -19,7 +19,7 @@ total_users  = str()
 
 def search():
     search_button = driver.find_element(By.XPATH,'/html/body/div[1]/header/div/div[2]/div[2]/div[1]/div/div/form/label/input[1]')
-    search_button.send_keys("repos:>=300 location:pakistan",Keys.ENTER)
+    search_button.send_keys("repos:>=400 location:pakistan",Keys.ENTER)
     time.sleep(5)
     total_users = driver.find_element(By.XPATH,'//*[@id="js-pjax-container"]/div/div[3]/div/div[1]/h3').text
     print(total_users)
