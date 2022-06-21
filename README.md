@@ -21,3 +21,6 @@ For example if there are 1000 repos of a user it will iterate all over the repos
 
 # Version 3:
 By selemium scraping of github users information from github main page
+scrape results are present in CSV file 
+Users from Pkaitan has repos greater than 400
+Total reults : 13
