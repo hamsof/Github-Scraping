@@ -18,3 +18,6 @@ It will iterate all over the repos of the user and get the unique programming la
 For example if there are 1000 repos of a user it will iterate all over the repos and give the programming languages is these repos. That require a lot of time so thats why I have narrowed down the searching criteria.
 
 (Total enteries to json file 4)
+
+# Version 3:
+By selemium scraping of github users information from github main page
