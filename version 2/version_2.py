@@ -36,5 +36,5 @@ for users in g.search_users(query="repos:>=600 location:pakistan"):
     all_data.append(data.copy())
 
 json_string = json.dumps(all_data,indent = 4)
-with open('./json_github_data.json', 'w') as out:
+with open('version_2.json', 'w') as out:
     out.write(json_string)
