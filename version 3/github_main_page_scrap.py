@@ -53,6 +53,7 @@ def main():
     search()
     while(True):
         data()
+        ## if the results are only one paged then the pagination dont appear it should be handled
         try:
             driver.find_element(By.CSS_SELECTOR,'.paginate-container')
         except:
